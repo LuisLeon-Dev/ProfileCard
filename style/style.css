@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    height: 100%;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-position: bottom 40vh right 48vw, top 60vh left 48vw;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    display: block;
+}
+
+.card-background {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-image {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: relative;
+    left: 40%;
+    top: -10%;
+    background-color: #fff
+}
+
+.card-info {
+    display: grid;
+    place-items: center;
+}
+
+.card-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-name span {
+    font-weight: 300;
+}
+
+.card-direction {
+    font-weight: 300;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.card-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid #d3d1d1;
+    width: 100%;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.label {
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+        height: 430px;
+    }
+    .card-image {
+        position: relative;
+        left: 37%;
+        top: -10%;
+        margin-bottom: -20px;
+    }
+    .attribution {
+        display: none;
+    }
+}
